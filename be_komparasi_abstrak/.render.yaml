@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: komparasi-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn be_komparasi_abstrak.wsgi --log-file -
+    autoDeploy: true
+    envVars:
+      - key: SECRET_KEY
+        value: "<your-secret-key>"
+      - key: DEBUG
+        value: "False"
