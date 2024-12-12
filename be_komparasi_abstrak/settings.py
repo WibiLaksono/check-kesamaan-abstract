@@ -59,7 +59,8 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    'https://cheabsplag.vercel.app/'
+    'https://cheabsplag.vercel.app',
+    'https://cheabsplag-git-main-ayabiiiis-projects.vercel.app/',
 ]
 
 TEMPLATES = [
