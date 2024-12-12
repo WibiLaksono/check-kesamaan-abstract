@@ -24,9 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p&5s_hd@o*hdtmp6(y2o*$3kr2kbnsr72pv%8gx4@3af0fd4w#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
 
 
 # Application definition
@@ -61,6 +59,7 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    'https://cheabsplag.vercel.app/'
 ]
 
 TEMPLATES = [

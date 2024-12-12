@@ -26,7 +26,7 @@ export default function Home() {
 
     const compareAbstracts = async () => {
         try {
-            const response = await axios.post("http://127.0.0.1:8000/api/compare/", { abstracts });
+            const response = await axios.post("http://check-kesamaan-abstract-production.up.railway.app/api/compare/", { abstracts });
             setHeatmap(response.data.heatmap);
             setSimilarPairs(response.data.similar_pairs);
             setHasCompared(true);
