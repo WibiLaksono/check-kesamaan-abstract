@@ -12,7 +12,7 @@ class CompareAbstracts(APIView):
     def post(self, request):
         abstracts = request.data.get('abstracts', [])
         if len(abstracts) < 2:
-            return Response({"error": "At least two abstracts are required."}, status=400)
+            return Response({"error": "Minimal memiliki 2 Abstrak!."}, status=400)
 
         # TF-IDF calculation
         vectorizer = TfidfVectorizer(stop_words='english')
