@@ -109,7 +109,7 @@ export default function Home() {
                                     Abstrak {i + 1}
                                 </div>
                                 <div className="text-black font-inter">
-                                    Memiliki kesamaan sebesar{" "}
+                                    Memiliki Kesamaan Sebesar{" "}
                                     <strong>{similarity.toFixed(2)}%</strong> dengan{" "}
                                     <strong>Abstrak {j + 1}</strong>
                                 </div>
